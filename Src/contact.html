@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Who am i</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/image/6151.jpg');
+  min-height: 100%;
+  padding-top: 50%;
+
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+/* .bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}  */
+
+/* Turn off parallax scrolling for tablets and phones */
+/* @media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+} */
+    p{
+        font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a style="color: black; font-size: 120%;" href="../index.html" class="w3-bar-item w3-button">HOME</a>
+    <a style="color: black; font-size: 120%;" href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a style="color: black; font-size: 120%;" href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+   <!-- Navbar on small screens -->
+   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a style="color: black; font-size: 120%;"href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="Src/contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+   <h1 class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WHO AM I</h1>
+    <!-- <span  class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WHO <span class="w3-hide-small">AM</span> I</span> -->
+  </div>
+</div>
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16"></div>
+    <!-- Container (Contact Section) -->
+<div  class="w3-content w3-container w3-padding-64" id="contact">
+    <h1 class="w3-center">CONTACT ME</h1>
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="row mt-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.049433688975!2d100.49845189999999!3d13.836070200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b0f075553b3%3A0x944b4fd9d843b40c!2z4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lie4LiH4Lip4LmM4Liq4Lin4Lix4Liq4LiU4Li04LmM!5e0!3m2!1sth!2sth!4v1692515152886!5m2!1sth!2sth" width="1000" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+            <br>
+            <br>
+          <i  class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www3.pongsawadi.ac.th/psc2023/" title="MagicSoftware">Pongsawadi</a></i> <br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +6692-602-0762<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: Kunakorn.s@magicsoftware.co.th<br>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64  w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <p>MADE by <a href="https://www.facebook.com/kunakorn.sadsoongnern/" title="Kunakorn" target="_blank" class="w3-hover-text-green">Kunakorn Sadsoongnern</a></p>
+  </footer>
+</body>
+</html>
